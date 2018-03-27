@@ -7,14 +7,14 @@
 		<!-- Messages go here: -->
 		<message if={!clickedShowMsg} each={ msg in chatLog }></message>
 	</div>
-	<label>username:</label>
-	 <input type="text" ref="author"/ onkeypress={ sendMsg } >
-	<input type="text" ref="messageInput" onkeypress={ sendMsg } placeholder="Enter Message">
-	<button type="button" onclick={ sendMsg }>SEND</button>
-  <button type ="button" onclick={removeMsg}>Delete ALL</button>
+	<label id="font">username:</label>
+	 <input id = "font" type="text" ref="author"/ onkeypress={ sendMsg } >
+	<input id= "font" type="text" ref="messageInput" onkeypress={ sendMsg } placeholder="Enter Message">
+	<button id= "font"  type="button" onclick={ sendMsg }>SEND</button>
+  <button id = "font" type ="button" onclick={removeMsg}>Delete ALL</button>
 	<script>
 		var that = this;
-	
+
 		this.clickedShowMsg = false;
 
 		showMsg(e){
@@ -88,11 +88,17 @@
 
 	<style>
 		:scope {
+			font-family: 'Share Tech', sans-serif;
 			display: block;
 			font-family: Helvetica;
 			font-size: 1em;
 		}
+		#font{
+
+			font-family: 'Share Tech', sans-serif;
+		}
 		.chatLog {
+			font-family: 'Share Tech', sans-serif;
 			border: 1px solid grey;
 			padding: 1em;
 			margin-bottom: 1em;
