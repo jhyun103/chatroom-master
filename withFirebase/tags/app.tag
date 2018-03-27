@@ -1,7 +1,7 @@
 <app>
 
 
-	<button type="button" name="button" onclick={ showMsg }>Show messages</button>
+	<button id="font" type="button" name="button" onclick={ showMsg }>Show messages</button>
 	<username user = {msg} if={clickedShowMsg}></username>
 	<div class="chatLog" ref="chatLog">
 		<!-- Messages go here: -->
