@@ -7,6 +7,9 @@
 	<title>MSTU CHAT!</title>
 </head>
 <body>
+	<h1>Welcome to Chat World!</h1>
+	<p>Type your username and message before pressing "send".</p>
+
 	<app></app>
 
 	<script src="tags/app.tag" type="riot/tag"></script>
@@ -16,6 +19,8 @@
 	<script src="js/riot+compiler.js"></script>
 	<script src="js/firebase.js"></script>
 	<!-- <script src="js/utilities.js"></script> -->
+
+	<p>REMINDER: You can up vote or down down other people's message.</p>
 
 	<script>
 	  // Initialize Firebase
@@ -33,7 +38,7 @@
 		// Global Cached -> Most useful Firebase refs accessible anywhere.
 		var database = firebase.database();
 		var messagesRef = database.ref('messages');
-		
+
 
 
 		// Initialize Riot
