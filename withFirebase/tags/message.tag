@@ -17,18 +17,18 @@
 
 
 		upVote(e){
-			
+
 			this.msg.vote ++;
 	            console.log(this.msg);
 	            database.ref().child("messages/" + this.msg.id + "/vote").set(this.msg.vote);
 		}
 		downVote(e){
-			
-			
+
+
 			this.msg.vote--;
 			console.log(this.msg);
 			database.ref().child("messages/" + this.msg.id + "/vote").set(this.msg.vote);
-		
+
 		}
 	//How can we update the vote on the app.tag and the value on database. Look up Firebase update method
 		</script>
@@ -42,11 +42,11 @@
 		:scope:not(:last-child) {
 			margin-bottom: 1em;
 		}
-		
+
 		#happy{
-			
-			width:5%;
-			height: 3%;
+
+			width:25px;
+			height: 24px;
 		}
 	</style>
 </message>
